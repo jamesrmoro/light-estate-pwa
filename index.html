@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light Estate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-messaging-compat.js"></script>
+  <link rel="stylesheet" href="style.css?version=2">
+</head>
+<body>
+  <h1>Available Properties</h1>
+  <button id="notificar-btn" onclick="registerPushToken()">Receive Notifications</button>
+  <div id="empreendimentos-tabs"></div>
+  <div id="predio-view"></div>
+  <script src="app.js?version=2"></script>
+</body>
+</html>

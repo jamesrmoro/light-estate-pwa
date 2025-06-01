@@ -1,0 +1,146 @@
+/* Reset box-sizing and remove default margin/padding */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* General body style */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 5px;
+  background: #f7f7f7;
+}
+
+/* Main title */
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Tabs container for developments/projects */
+#empreendimentos-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #e0e0e0 #fff;
+  margin-bottom: 16px;
+  padding-bottom: 2px;
+}
+
+/* Custom scrollbar for tabs */
+#empreendimentos-tabs::-webkit-scrollbar {
+  height: 6px;
+}
+#empreendimentos-tabs::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Tab buttons */
+.tab-btn {
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  background: #eee;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+  white-space: nowrap;
+  transition: background .17s, color .17s;
+}
+
+/* Active tab */
+.tab-btn.active {
+  background: #fff;
+  border-bottom: 2px solid #47c768;
+  color: #47c768;
+}
+
+/* Main view container for the building */
+#predio-view {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 4px;
+}
+
+/* Grid for building apartments */
+.building-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--per-floor, 6), 1fr);
+  gap: 4px; /* Matches gridGap in JS */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Individual apartment box */
+.apt {
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgb(31, 41, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 10px;
+  box-sizing: border-box;
+  user-select: none;
+  transition: background 0.2s;
+  border: 1px solid rgb(75, 85, 99);
+  position: relative; /* Needed for :after */
+}
+
+/* Sold apartment visual style */
+.apt.sold {
+  background: #facc15;
+  color: #a00;
+  text-decoration: line-through;
+}
+
+/* Sold checkmark icon (appears in bottom-right) */
+.apt.sold:after {
+  content: "✓";
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  font-size: 10px;
+  color: #000;
+}
+
+/* Notification button */
+#notificar-btn {
+  background: #47c768;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+#notificar-btn:active {
+  background: #349e4d;
+}
+
+/* Mobile responsiveness for screens <= 400px */
+@media (max-width: 400px) {
+  #predio-view {
+    padding: 0 2vw;
+  }
+  .building-grid {
+    padding: 1vw;
+    gap: 1px;
+  }
+  .apt {
+    font-size: 3vw;
+  }
+}
