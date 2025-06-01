@@ -7,10 +7,13 @@
 
 /* General body style */
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 5px;
-  background: #f7f7f7;
+  width: 380px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Main title */
@@ -133,6 +136,9 @@ h1 {
 
 /* Mobile responsiveness for screens <= 400px */
 @media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
   #predio-view {
     padding: 0 2vw;
   }

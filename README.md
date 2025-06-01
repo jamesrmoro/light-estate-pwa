@@ -17,7 +17,7 @@ A modern Progressive Web App (PWA) for real estate teams to manage sales, receiv
 ## 📲 How to Install
 
 1. **Open the PWA**  
-   Visit [https://lightestate.jamesrmoro.me](https://lightestate.jamesrmoro.me) in your browser.
+   Visit [https://lightestate.jamesrmoro.me](https://light-estate.jamesrmoro.me) in your browser.
 
 2. **Install on Device**  
    - On mobile: tap "Add to Home Screen" in your browser menu.  
