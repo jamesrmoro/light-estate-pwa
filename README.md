@@ -55,7 +55,7 @@ A modern Progressive Web App (PWA) for real estate teams to manage sales, receiv
 ## ✨ Credits
 
 Developed by [James Moro](https://jamesrmoro.me)  
-Challenge submission for [Postmark Inbox Innovators](https://dev.to/challenges/postmark).
+Challenge submission for [Postmark Inbox Innovators](https://dev.to/jamesrmoro/smart-real-estate-delivering-instant-sales-updates-with-postmark-chrome-extensions-iot-bll).
 
 ## 📣 Contact
 
